@@ -8,11 +8,11 @@
     </head>
     <header>
         <div class="header">
-            <div><a href=""><button><img src="" alt=""></button></a></div>
-            <div><a href=""><button>Downloads</button></a></div>
-            <div><a href=""><button>TF Standard</button></a></div>
-            <div><a href=""><button>Devices</button></a></div>
-            <div><a href=""><button>About Us</button></a></div>
+            <div><a href="http://127.0.0.1:8000/"><button>TF</button></a></div>
+            <div><a href="http://127.0.0.1:8000/get_started"><button>get started</button></a></div>
+            <div><a href="http://127.0.0.1:8000/tf_standard"><button>TF Standard</button></a></div>
+            <div><a href="http://127.0.0.1:8000/devices"><button>Devices</button></a></div>
+            <div><a href="http://127.0.0.1:8000/about_us"><button>About Us</button></a></div>
         </div>
     </header>
     <body>
@@ -21,12 +21,7 @@
             <!-- What is true Fidelity and what does it do -->
         </div>
         <div>
-            <form action="POST">
-                <h1>get started</h1>
-                <input class="form-text-field" type="text" name="manufacturer" value="manufactuer">
-                <input type="text" name="model" value="model">
-                <input type="text" name="year" value="year">
-            </form>
+            <div><a href=""><button>get started</button></a></div>
         </div>
     </body>
 </html>

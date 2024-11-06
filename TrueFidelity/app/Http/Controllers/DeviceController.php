@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\device;
 use App\Http\Requests\StoredeviceRequest;
 use App\Http\Requests\UpdatedeviceRequest;
+use App\Policies\DevicePolicy;
 
 class DeviceController extends Controller
 {
@@ -13,7 +14,7 @@ class DeviceController extends Controller
      */
     public function index()
     {
-        //
+        return view('devices');
     }
 
     /**
@@ -37,7 +38,8 @@ class DeviceController extends Controller
      */
     public function show(device $device)
     {
-        //
+        $devices = Device::all();
+        return view('device_show', ['devices' => $devices]);
     }
 
     /**
