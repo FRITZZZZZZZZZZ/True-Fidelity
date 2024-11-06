@@ -21,11 +21,8 @@
             <!-- What is true Fidelity and what does it do -->
         </div>
         <div>
-            <h1>Download TF now</h1>
-        </div>
-        <div>
-            <H1>Find your device</H1>
             <form action="POST">
+                <h1>get started</h1>
                 <input class="form-text-field" type="text" name="manufacturer" value="manufactuer">
                 <input type="text" name="model" value="model">
                 <input type="text" name="year" value="year">
