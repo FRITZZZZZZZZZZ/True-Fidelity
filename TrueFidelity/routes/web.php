@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DeviceController;
+use App\Http\Controllers\user;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,7 +18,10 @@ Route::get('/tf_standard', function () {
     return view('tf_standard');
 });
 
+
 Route::post('/device_show', [DeviceController::class, 'device_show']);
 
 Route::get('/devices', [DeviceController::class, 'index']);
 
+Route::get('/register', [user::class, 'register']);
+Route::post('/register', [user::class, 'store']);

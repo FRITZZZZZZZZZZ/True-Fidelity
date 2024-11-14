@@ -13,4 +13,8 @@
             
         </div>
     </body>
+    <footer>
+        <a href="">legals</a>
+        <a href="http://127.0.0.1:8000/register">Register as TF Engineer</a>
+    </footer>
 </div>
