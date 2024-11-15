@@ -29,7 +29,7 @@ class DevicePolicy
      */
     public function create(User $user): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -37,7 +37,7 @@ class DevicePolicy
      */
     public function update(User $user, device $device): bool
     {
-        //
+        return true;
     }
 
     /**

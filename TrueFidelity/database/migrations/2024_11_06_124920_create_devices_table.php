@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('device_type');
             $table->string('model_name');
             $table->string('manufacturer');
-            $table->binary('calibration_profile')->nullable();
+            $table->string('calibration_profile')->nullable();
         });
     }
 

@@ -14,7 +14,8 @@ class DeviceController extends Controller
      */
     public function index()
     {
-        return view('devices');
+        $devices = Device::all();
+        return view('devices', ['devices' => $devices]);
     }
 
     /**
@@ -22,7 +23,7 @@ class DeviceController extends Controller
      */
     public function create()
     {
-        //
+        return view("devices_create");
     }
 
     /**
@@ -30,7 +31,13 @@ class DeviceController extends Controller
      */
     public function store(StoredeviceRequest $request)
     {
-        //
+        $device = new device();
+        $device->device_type = request('device_type');
+        $device->model_name = request('model_name');
+        $device->manufacturer = request('manufacturer');
+        $device->calibration_profile = request('calibration_profile');
+        $device->save();
+        return view('devices_create');
     }
 
     /**

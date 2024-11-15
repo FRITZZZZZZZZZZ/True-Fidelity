@@ -19,21 +19,20 @@
             </div>
         </div>
     </header>
-    <div id="content_body">
-        <H1>The new bar for your audio experience</H1>
-        <div class="content_field_left">
-            <p class="statement_paragraph">True Fidelity is the new all around benchmark for your digital audio experience, setting up new standards for audio fidelity.</p>
-            <p class="statement_paragraph">Unlock the full potential of your device's audio performance with studio-grade dynamic calibration.</p>
-        </div>
-        <div class="content_field_right">
-            <p class="statement_paragraph">Assess audio performance at a glance with the True Fidelity quality class system.</p>
-            <p class="statement_paragraph">Communicate quality and consistency to a broad audience by certifying your products with the most straightforward and easy to understand audio certification on the market.</p>
-        </div>
+    <body>
         <div>
-            <a href=""><button>get started</button></a>
+            <form class="form" method="POST">
+            @csrf 
+                <input class="input_field" type="text" name="device_type" placeholder="Type">
+                <input class="input_field" type="text" name="model_name" placeholder="Model">
+                <input class="input_field" type="text" name="manufacturer" placeholder="Manufacturer">
+                <input class="input_field" type="text" name="calibration_profile" placeholder="Calibration Profiile">
+                <input class="button" type="submit" value="create">
+            </form>
         </div>
-        <footer>
-            <a href="http://127.0.0.1:8000/register">Register as TF Engineer</a>
-        </footer>
-    </div>
+    </body>
+    <footer>
+        <a href="http://127.0.0.1:8000/register">Register as TF Engineer</a>
+    </footer>
 </div>
+
